@@ -360,7 +360,7 @@ void train_detector(char *datacfg, char *cfgfile, char *weightfile, int *gpus, i
 
         //if (i % 1000 == 0 || (i < 1000 && i % 100 == 0)) {
         //if (i % 100 == 0) {
-//         if (iteration % 200 == 0 || (iteration <= 2000 && iteration % 100 == 0)) {
+        //if (iteration % 200 == 0 || (iteration <= 2000 && iteration % 100 == 0)) {
         if (iteration >= (iter_save + 100) || iteration % 100 == 0) {
             iter_save = iteration;
 #ifdef GPU
